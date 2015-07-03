@@ -1,0 +1,258 @@
+/*setting this variable precludes the use of a replace in the gulp task*/
+$icon-font-path: 'fonts/bootstrap/';
+$footer-height: 260px;
+
+@import '../../node_modules/compass-mixins/lib/_compass.scss';
+
+@import './calcite-bootstrap/styles/calcite';
+// Core variables and mixins
+@import '_variables'; //normal bootstrap variables
+//$body-bg: #FF0000; //proves that "last-in-wins"
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+
+// Reset and dependencies
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
+
+// Core CSS
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+
+// Components
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close';
+
+// Components w/ JavaScript
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel';
+
+// Utility classes
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+
+// @import 'footer';
+// @import 'simple-map';
+// @import 'animated-button';
+
+
+html, body {
+  height: auto;
+  min-height: 100%;
+}
+
+/** OVERRIDES - SHOULD THESE BE IN CALCITE??? */
+.navbar {
+  margin-bottom:20px;
+}
+.row{
+  padding-bottom:15px;
+}
+.navbar-right {
+  margin-right:0px;
+}
+.nav-links{
+  text-transform: lowercase;
+}
+
+/**----------------------------------------------- */
+
+//== Let's make the footer stick to the bottom when the page is short!
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: ($footer-height + 20px);
+
+}
+
+/* This centers the text vertically in the footer */
+.container .text-muted {
+  margin: 18px 0;
+}
+
+
+
+#search, input.search {
+  display: inline;
+  width: 250px;
+}
+
+
+
+/* responsive type for Admin Site List */
+.big-digits {
+  font-size: 3.8em;
+  line-height: 1.0em;
+  }
+@media(max-width: 1200px) {
+  .big-digits {
+    font-size: 3.0em;
+    }
+  }
+@media(max-width: 960px) {
+  .big-digits {
+    font-size: 2.6em;
+    }
+  }
+@media(max-width: 740px) {
+  .big-digits {
+    font-size: 1.4em;
+    }
+  }
+
+.spin {
+  -webkit-animation: spin 1.2s infinite linear;
+  -moz-animation: spin 1.2s infinite linear;
+  -o-animation: spin 1.2s infinite linear;
+  -webkit-font-smoothing: antialiased;
+  animation: spin 1.2s infinite linear;
+     -webkit-transform-origin: 52% 52%;
+         transform-origin:52% 52%;
+         -ms-transform-origin:52% 52%; /* IE 9 */
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#user-dropdown {
+  color: $brand-info;
+  margin-top: .35em;
+  .dropdown-menu {
+    li {
+      cursor:pointer;
+      a {
+        &:hover {
+          background-color: $brand-info;
+          color: white;
+        }
+      }
+    }
+  }
+  .capitalize{
+    text-transform: capitalize;
+  }
+  .profile-link {
+    color: $text-color;
+    &:hover  {
+      color: $text-color;
+      // .profile-header {
+      //   background-color: $gray-lighter;
+      // }
+    }
+  }
+  .profile-header {
+    @include clearfix;
+    // padding: .75em .75em .25em;
+
+    .profile-header-image {
+      float: left;
+      padding: 0 .5em .5em 0;
+    }
+    .full-name {
+     font-size: .85em;
+     margin-top: 1em;
+     display: block;
+     overflow:hidden;
+    }
+    .username {
+     font-size: .85em;
+     margin-top:-0.35em;
+    }
+    .missing-icon-profile-header-image{
+      font-size: 33px;
+      width: 30px;
+      height: 36px;
+      padding: 5px 1.2em 0 0;
+      float:left;
+    }
+  }
+  .profile-image {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: -4px;
+    margin: 0 4px;
+    // @include for-ie8 {
+    //   display: none;
+    // }
+  }
+  .dropdown {
+    @include adjust-font-size-to(14px, 1);
+    padding: 4px 1.75em .25em .5em;
+    &:after {
+      right: 12px;
+      top: 20px;
+    }
+  }
+  .first-name {
+    // @include respond-to(1100px) {
+    //   display: none;
+    // }
+  }
+}
+
+
+#main, .leader {
+  margin-top:25px;
+}
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+/** FOOTER */
+// .footer.sticky-footer { 
+//   clear: both;
+//   margin-top: -200px;
+//   min-height: 200px;
+//   padding-top: 1.5em;
+//   h4 {
+//     margin-bottom: .75em;
+//   }
+  
+// }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 260px;
+  background-color: #f5f5f5;
+}
+
+#footer-social-nav {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center;
+  a {
+    color: #a6a6a6;
+    display: inline;
+    padding: 0 .25em 0 0;
+  }
+}
+
+.footer-navs a,
+#footer-legal a {
+color: #56A5D8;
+}
+
+.footer-navs a:hover {
+color: #2980BB;
+text-decoration: underline;
+}
+
+.footer-navs ul {
+list-style-type: square;
+color: #56A5D8; 
+}
+
+.footer-navs h4,
+.footer-navs h4 a {
+color: #777;
+}
+
+#esri-logo-footer {
+margin-top: 0px;
+margin-bottom: 15px;
+}
+.esri-logo-footer {
+  //@include retina-image-replace("images/logo-esri-footer.jpg", "images/logo-esri-footer@2x.jpg");
+  background-image: url("../images/logo-esri-footer.jpg");
+  display: block;
+  width:100px;
+  padding-top: 56px;
+  margin: 1.5em auto 0;
+}
+
+.text-center {
+align:center;
+}
+
+.svg-icon circle, .svg-icon path, .svg-icon polygon, .svg-icon rect {
+    fill: #808080;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.svg-icon {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+}

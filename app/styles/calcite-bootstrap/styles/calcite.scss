@@ -1,0 +1,113 @@
+// Calcite Module Variables
+@import "colors";
+@import "scaffolding";
+@import "typography";
+@import "iconography";
+@import "components";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "dropdowns";
+@import "zindex";
+@import "media";
+@import "grid";
+@import "containers";
+@import "navbar";
+@import "navs";
+@import "pagination";
+@import "pager";
+@import "jumbotron";
+@import "formstates";
+@import "tooltips";
+@import "popovers";
+@import "labels";
+@import "modals";
+@import "alerts";
+@import "progressbars";
+@import "listgroups";
+@import "panels";
+@import "thumbnails";
+@import "wells";
+@import "badges";
+@import "breadcrumbs";
+@import "carousel";
+@import "close";
+@import "code";
+@import "type";
+
+// Custom SASS modules
+@import "header";
+@import "lowernav";
+@import "micronav";
+
+.navbar-default .navbar-nav>li>a {
+  text-transform: capitalize;
+}
+.nav-tabs>li>a {
+  text-transform: capitalize;
+
+}
+
+
+/** FOOTER STYLES **/
+.footer {
+  color: #4d4d4d;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  // min-height: 240px;
+  background: #f3f3ee;
+  font-family: "Avenir LT W01 65 Medium", "Arial", sans-serif;
+  padding: 48px 0 48px 0;
+  a {
+    font-family: "Avenir LT W01 45 Light", Arial, Helvetica, sans-serif;
+    color: #999;
+  }
+  a:hover {
+    color: #003c60;
+    text-decoration: none;
+  }
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.333em;
+    margin-bottom: 0.333em;
+  }
+  ul {
+    font-family: 'Lucida Grande', 'Segoe UI', Arial, sans-serif;
+    margin: 0 0 21px 0;
+    padding: 0px;
+    li {
+      background: url(https://www.arcgis.com/features/img/bluebullet.png) no-repeat left 10px;
+      padding-left: 10px;
+      list-style: none;
+      margin: 0;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  .social-icon {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+    
+  }
+  #hover-me {
+    fill: #808080;
+    transition: 1s;
+  }
+  svg:hover #hover-me {
+    fill: #003c60;
+  }
+  .esri-icon {
+    width: 100px;
+    height: 50px;
+  }
+  .legal {
+  padding-top: 0px;
+    @media (max-width: 990px){
+      padding-top: 48px;
+      text-align: center;
+    }
+  }
+}

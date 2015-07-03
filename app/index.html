@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calcite skeleton</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+
+        <div class="nav navbar-nav navbar-right" >
+          
+          <a type="button" class="btn btn-primary btn-sm navbar-btn"><span >Sign In</span></a>
+
+          <!--
+          THIS IS THE SIGNED-IN USER DROP-DOWN 
+          <div id="user-dropdown" class="btn-group" dropdown >
+            <button type="button" class="btn btn-link btn-sm navbar-btn dropdown-toggle" dropdown-toggle aria-expanded="false">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Name <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a ng-href="{{profileUrl()}}" class="profile-link">
+                  <div class="profile-header">
+                    <img width="36" height="36" class="profile-header-image" ng-src="{{thumbnailUrl()}}" ng-show="showThumbnail()">
+                    <span class="glyphicon glyphicon-user missing-icon-profile-header-image" ng-hide="showThumbnail()"></span>
+                    <span class="full-name" >Dave Bouwman</span>
+                    <h6 class="username" >dbouwman</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#" >Action 1</a></li>
+              <li><a href="#" class="capitalize" >Action 2</a></li>
+              <li class="divider"></li>
+              <li><a href="#" >Sign Out</a></li>
+            </ul>
+          </div> -->
+
+
+        </div><!-- /.navbar-right -->
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="sites"><span class="site-logo">Calcite Skeleton</a>
+        </div><!-- /.navbar-header -->
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav nav-links">
+            <li><a href="#" target="_blank" >Link 1</a></li>
+            <li><a href="#" target="_blank" >Link 2</a></li>
+            <li><a href="#" target="_blank" >Link 3</a></li>
+          </ul>
+        </div><!--/.navbar -->
+      </div><!-- /.container -->
+    </nav>
+
+
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1>Big Important Text</h1>
+        <p class="lead">Smaller introduction text - why this is cool, important or whatever. At this point I'm just making this kinda long so it wraps a bit.</p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h4>Feature Header 1</h4>
+          <p>Feature description. Just some text to make this long enough to wrap. This could also be a done with panels (see below)</p>
+          <a href="#" class="btn btn-default">View Feature >></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h4>Feature Header 1</h4>
+          <p>Feature description. Just some text to make this long enough to wrap. This could also be a done with panels (see below)</p>
+          <a href="#" class="btn btn-default">View Feature >></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h4>Feature Header 1</h4>
+          <p>Feature description. Just some text to make this long enough to wrap. This could also be a done with panels (see below)</p>
+          <a href="#" class="btn btn-default">View Feature >></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title">Panel title</h3>
+           </div>
+           <div class="panel-body">
+              <div id="map-1"></div>
+           </div>
+         </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title">Panel title</h3>
+           </div>
+           <div class="panel-body">
+              <div id="map-2"></div>
+           </div>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>♥ from Esri</p>
+      </div>
+      
+    </div>
+    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://js.arcgis.com/3.13/"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/scripts/bootstrap/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
