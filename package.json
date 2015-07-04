@@ -1,4 +1,8 @@
 {
+  "name":"calcite-skeleton",
+  "version":"0.0.1",
+  "description":"Simple site skeleton with an alpha version of bootstrap calcite",
+  
   "engines": {
     "node": ">=0.12.0"
   },
@@ -38,6 +42,7 @@
     }
   },
   "dependencies": {
-    "bootstrap-sass": "3.3.4"
+    "bootstrap-sass": "3.3.4",
+    "compass-mixins": "^0.12.7"
   }
 }
